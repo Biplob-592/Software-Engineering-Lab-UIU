@@ -1,0 +1,23 @@
+create database Fall2025_CW;
+use Fall2025_CW;
+
+create table Teacher ( 
+	teacher_id INT(10) AUTO_INCREMENT, 
+	name char(30), 
+	course_id char(30),
+	PRIMARY KEY(teacher_id) 
+);
+
+insert into Teacher values ( '', 'Faisal', 'CSE2205' );
+insert into Teacher values ( '', 'Israfil', 'CSEB00S' );
+select * from Teacher;
+
+create table Course ( 
+	course_id INT(10) AUTO_INCREMENT, 
+	title char(30), 
+	PRIMARY KEY(course_id) 
+);
+
+insert into Course values ( '', 'STAT' );
+insert into Course values ( '', 'LINEAR' );
+select * from Course;
